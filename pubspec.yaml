@@ -1,0 +1,84 @@
+name: relayered
+description: Note app with a recursive interface.
+#JAVA 17
+
+publish_to: 'none'
+version: 1.0.9
+
+environment:
+  sdk: ">=3.0.0 <=4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  #Services
+    #awesome_notifications: any
+  intl: any
+  shared_preferences: any
+  flashy_flushbar: any
+
+
+  #Sync
+  path_provider: any
+  dart_git:
+    git: https://github.com/GitJournal/dart-git.git
+  go_git_dart:
+    git: https://github.com/GitJournal/go_git_dart.git
+  openssh_ed25519:
+    git: https://github.com/GitJournal/openssh_ed25519.git
+
+
+  #Old
+  #
+  #UI
+  #flutter_quill: any
+  #flutter_quill_extensions: any
+  #
+  #Firebase
+  #encrypt: any
+  #firebase_auth: any
+  #cloud_firestore: any
+  #firebase_core: any 
+
+dev_dependencies:
+  flutter_launcher_icons: any
+  flutter_test:
+    sdk: flutter
+  flutter_lints: any
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon.png"
+  #    flutter pub run flutter_launcher_icons:main
+  adaptive_icon_background: "#ffffff"
+  adaptive_icon_foreground: "assets/icon.png"
+  remove_alpha_ios: true
+
+flutter:
+  uses-material-design: true
+  fonts:
+    - family: OpenSans
+      fonts:
+        - asset: assets/fonts/OpenSans-Regular.ttf
+
+    - family: RobotoMono
+      fonts:
+        - asset: assets/fonts/RobotoMono-Regular.ttf
+
+    - family: JetBrainsMono
+      fonts:
+        - asset: assets/fonts/JetBrainsMono-Regular.ttf
+
+    - family: IBMPlexMono
+      fonts:
+        - asset: assets/fonts/IBMPlexMono-Regular.ttf
+
+    - family: Pacifico
+      fonts:
+        - asset: assets/fonts/Pacifico-Regular.ttf
+        
+  assets:
+    - assets/translations/
+
